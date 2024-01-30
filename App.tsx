@@ -20,6 +20,7 @@ export default function App() {
       return;
     }
 
+    setTravel("");
     setLoading(true);
     Keyboard.dismiss();
 
@@ -32,7 +33,7 @@ export default function App() {
         Authorization:`Bearer ${KEY_GPT}`
       },
       body: JSON.stringify({
-        model:"gpt-3.5-turbo-0301",
+        model:"gpt-3.5-turbo",
         messages:[
           {
             role:'user',
